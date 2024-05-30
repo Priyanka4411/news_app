@@ -1,0 +1,118 @@
+/* All.css */
+.container {
+    /* background-color: #333; */
+
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .title {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.2s;
+    text-align: left;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .info {
+    margin-top: 10px;
+  }
+  
+  .author {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .content {
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .date {
+    color: #aaa;
+    font-size: 0.8em;
+  }
+  
+  .read-more-link,
+  .source-link {
+    color: #1e90ff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .read-more-link:hover,
+  .source-link:hover {
+    text-decoration: underline;
+  }
+  
+  .item-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .card {
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .image {
+      height: 150px;
+    }
+  
+    .title {
+      font-size: 1.5em;
+    }
+  
+    .content {
+      font-size: 0.9em;
+    }
+  
+    .date,
+    .author,
+    .item-title {
+      font-size: 1em;
+    }
+  }
+  
