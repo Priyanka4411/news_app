@@ -20,7 +20,7 @@ function All() {
       <div className="cards">
         {data.map((item, index) => (
           <div className="card" key={index}>
-            <img className="image" src={item.imageUrl} alt="No image" />
+            <img className="image" src={item.imageUrl}  />
             <h2 className="item-title">{item.title}</h2>
             
             <div className="info">
