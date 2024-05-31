@@ -17,11 +17,13 @@ function All() {
   return (
     <div className="container">
       {/* <h1 className="title">Data Fetching...</h1> */}
-      <div className="cards">
-        {data.map((item, index) => (
-          <div className="card" key={index}>
-            <img className="image" src={item.imageUrl} />
-            <h2 className="item-title">{item.title}</h2>
+      <div className="cards" >
+      {data.map((item, index) => (
+          <a href={item.readMoreUrl}  target='_blank'>
+            <button style={{border:"none",backgroundColor:"white"}}>
+            <div className="card" key={index}>
+            <img className="image" src={item.imageUrl}  style={{cursor: "pointer"}}/>
+            <h3 className="item-title">{item.title}</h3>
             
             <div className="info">
               <p className="author">Author: {item.author}</p>
@@ -30,6 +32,8 @@ function All() {
               <a className="read-more-link" href={item.readMoreUrl} target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
+            </button>
+          </a>
         ))}
       </div>
     </div>
