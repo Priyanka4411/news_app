@@ -21,7 +21,7 @@ function All() {
         {data.map((item, index) => (
           <div className="card" key={index}>
             <img className="image" src={item.imageUrl}  />
-            <h2 className="item-title">{item.title}</h2>
+            <h3 className="item-title">{item.title}</h3>
             
             <div className="info">
               <p className="author">Author: {item.author}</p>
